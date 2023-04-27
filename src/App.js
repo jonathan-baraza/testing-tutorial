@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="w-full bg-blue-200 p-6">
+        <h1 className="text-2xl mx-auto w-fit">
+          Let's learn testing in an app.
+        </h1>
+      </div>
+      <div className="w-full flex justify-center">
+        <button
+          data-testid="btnMain"
+          className="rounded-2xl  bg-green-600 text-white p-3 w-[100px] mx-auto mt-10 hover:bg-green-700 hover:cursor-pointer "
         >
-          Learn React
-        </a>
-      </header>
+          Click me
+        </button>
+      </div>
     </div>
   );
 }
